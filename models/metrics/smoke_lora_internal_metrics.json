@@ -1,0 +1,27 @@
+{
+  "model_path": "D:\\dev\\projects\\yolo_train\\models\\trained\\smoke\\yolo11s_lora_smoke\\weights\\best.pt",
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed\\data.yaml",
+  "split": "test",
+  "precision": 0.12587235741771846,
+  "recall": 0.2310924369747899,
+  "map50": 0.06658105175326905,
+  "map50_95": 0.024570484651929014,
+  "per_class_map50_95": {
+    "crack": 0.027333940552131765,
+    "water": 0.009877338862216617,
+    "leak": 0.036500174541438654
+  },
+  "per_class_object_count": {
+    "crack": 18,
+    "water": 84,
+    "leak": 102
+  },
+  "speed_ms": {
+    "preprocess": 0.28640677276080423,
+    "inference": 8.437667331026136,
+    "loss": 0.0007478088354766071,
+    "postprocess": 0.8288625497542567
+  },
+  "model_size_mb": 20.394230842590332,
+  "plots_directory": "D:\\dev\\projects\\yolo_train\\models\\metrics\\evaluation_runs\\smoke_lora_internal"
+}

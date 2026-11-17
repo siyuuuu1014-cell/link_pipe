@@ -1,0 +1,11 @@
+{
+  "source": "yolo26s_lora_smoke",
+  "smoke_only": true,
+  "model_path": "D:\\dev\\projects\\yolo_train\\models\\trained\\yolo26_lora\\smoke\\yolo26s_lora_smoke_20260719_v2\\weights\\best.pt",
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed\\data.yaml",
+  "split": "test",
+  "precision": 0.8733409045487853,
+  "recall": 0.8315871125493244,
+  "map50": 0.8936816317853097,
+  "map50_95": 0.8362682106022572
+}

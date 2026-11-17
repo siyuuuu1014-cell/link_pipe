@@ -1,0 +1,9 @@
+high:
+  leak_confidence: 0.75
+  leak_count: 2
+  leak_area_ratio: 0.05
+  leak_crack_iou: 0.10
+medium_classes:
+  - leak
+  - crack
+  - water

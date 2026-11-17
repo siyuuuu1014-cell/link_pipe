@@ -1,0 +1,26 @@
+# Model can be a pretrained checkpoint name or a local .pt/.yaml path.
+model: yolo11s.pt
+data: data/processed/data.yaml
+
+# Core training parameters
+epochs: 150
+imgsz: 640
+batch: 16
+device: 0
+workers: 0
+patience: 30
+seed: 42
+deterministic: true
+pretrained: true
+
+# Output directory: runs/train/baseline
+project: models/trained
+name: yolo11s_full
+exist_ok: true
+
+# Common options
+cache: false
+amp: true
+plots: true
+save: true
+verbose: true

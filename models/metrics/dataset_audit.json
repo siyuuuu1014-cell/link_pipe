@@ -1,0 +1,58 @@
+{
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed",
+  "classes": {
+    "0": "crack",
+    "1": "water",
+    "2": "leak"
+  },
+  "splits": {
+    "train": {
+      "images": 2816,
+      "class_objects": {
+        "crack": 170,
+        "water": 847,
+        "leak": 1154
+      },
+      "negative_images": 708,
+      "objects_per_image": {
+        "0": 708,
+        "1": 2067,
+        "2": 30,
+        "3": 3,
+        "4": 5,
+        "5": 3
+      }
+    },
+    "valid": {
+      "images": 251,
+      "class_objects": {
+        "crack": 18,
+        "water": 85,
+        "leak": 97
+      },
+      "negative_images": 53,
+      "objects_per_image": {
+        "0": 53,
+        "1": 196,
+        "2": 2
+      }
+    },
+    "test": {
+      "images": 251,
+      "class_objects": {
+        "crack": 18,
+        "water": 84,
+        "leak": 102
+      },
+      "negative_images": 53,
+      "objects_per_image": {
+        "0": 53,
+        "1": 194,
+        "2": 3,
+        "4": 1
+      }
+    }
+  },
+  "errors": [],
+  "passed": true
+}

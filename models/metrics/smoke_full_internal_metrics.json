@@ -1,0 +1,27 @@
+{
+  "model_path": "D:\\dev\\projects\\yolo_train\\models\\trained\\smoke\\yolo11s_full_smoke\\weights\\best.pt",
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed\\data.yaml",
+  "split": "test",
+  "precision": 0.6360690427398269,
+  "recall": 0.4635815433866542,
+  "map50": 0.5865814936160142,
+  "map50_95": 0.5521798716603414,
+  "per_class_map50_95": {
+    "crack": 0.5751358773620969,
+    "water": 0.5132477814871932,
+    "leak": 0.5681559561317342
+  },
+  "per_class_object_count": {
+    "crack": 18,
+    "water": 84,
+    "leak": 102
+  },
+  "speed_ms": {
+    "preprocess": 0.2541517927190771,
+    "inference": 5.378318326714711,
+    "loss": 0.0007298803541334383,
+    "postprocess": 0.7423318722387368
+  },
+  "model_size_mb": 18.294026374816895,
+  "plots_directory": "D:\\dev\\projects\\yolo_train\\models\\metrics\\evaluation_runs\\smoke_full_internal"
+}

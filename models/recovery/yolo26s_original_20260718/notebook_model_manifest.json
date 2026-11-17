@@ -1,0 +1,9 @@
+{
+  "training_line": "yolo26s_full_768_formal",
+  "mainline_isolated": true,
+  "best_pt": "D:\\dev\\projects\\yolo_train\\models\\trained\\yolo26\\formal\\yolo26s_full_768_formal\\weights\\best.pt",
+  "metrics_json": "D:\\dev\\projects\\yolo_train\\models\\metrics\\yolo26s_full_768_internal_metrics.json",
+  "official_ultralytics_version": "8.4.55",
+  "end2end_nms_free": true,
+  "automatically_deployed": false
+}

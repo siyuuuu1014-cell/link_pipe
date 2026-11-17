@@ -1,0 +1,59 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.jupyter_runtime/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.venv/
+.venv-yolo26/
+venv/
+.env
+
+# Training outputs and model weights
+runs/
+*.pt
+*.onnx
+*.engine
+*.torchscript
+
+# Local datasets (keep the directory skeleton only)
+datasets/**
+!datasets/**/
+!datasets/**/.gitkeep
+!datasets/data.yaml
+
+# Raw/processed data and runtime storage
+data/pipeline_leakage1/
+data/processed/
+data/external_test/**
+!data/external_test/.gitkeep
+data/demo/**
+!data/demo/.gitkeep
+storage/uploads/**
+storage/results/**
+storage/videos/**
+storage/reports/**
+storage/database/**
+!storage/**/.gitkeep
+
+# Generated model artifacts (metrics JSON/CSV remain trackable)
+models/base/**
+models/trained/**
+models/deployed/**
+!models/**/.gitkeep
+models/metrics/*.png
+models/metrics/*.npy
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+vendor/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

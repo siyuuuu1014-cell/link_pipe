@@ -1,0 +1,70 @@
+{
+  "experiment": "yolo26s_full_vs_lora_from_same_pretrained_checkpoint",
+  "fairness": {
+    "base_checkpoint": "D:\\dev\\projects\\yolo_train\\yolo26s.pt",
+    "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed\\data.yaml",
+    "split": "fixed_test",
+    "imgsz": 768,
+    "seed": 42,
+    "note": "LoRA trains adapters plus the newly initialized three-class detection head."
+  },
+  "full": {
+    "model": "D:\\dev\\projects\\yolo_train\\models\\trained\\yolo26\\formal\\yolo26s_full_768_formal\\weights\\best.pt",
+    "trainable_parameters": 9950186,
+    "trainable_ratio": 1.0,
+    "merged_model_mb": 19.413212776184082,
+    "metrics": {
+      "precision": 0.9236618360819269,
+      "recall": 0.8409813606423677,
+      "map50": 0.9205406487744515,
+      "map50_95": 0.8547481015292729,
+      "per_class_map50_95": {
+        "crack": 0.8454610439141332,
+        "water": 0.8462189172954474,
+        "leak": 0.8725643433782381
+      },
+      "inference_ms": 6.557101992086927
+    },
+    "training": {
+      "epochs": 139,
+      "best_epoch": 114,
+      "training_seconds": 21069.9,
+      "best_val_map50_95": 0.82819
+    }
+  },
+  "lora": {
+    "model": "D:\\dev\\projects\\yolo_train\\models\\experiments\\yolo26s_full_vs_lora\\lora_runs\\smoke\\yolo26s_lora_from_pretrained_smoke_20260719\\weights\\best.pt",
+    "adapter": "D:\\dev\\projects\\yolo_train\\models\\experiments\\yolo26s_full_vs_lora\\lora_runs\\smoke\\yolo26s_lora_from_pretrained_smoke_20260719\\adapters\\adapter.pt",
+    "trainable_parameters": 1152298,
+    "adapter_parameters": 218112,
+    "head_parameters": 934186,
+    "trainable_ratio": 0.11580667939272693,
+    "merged_model_mb": 19.315678596496582,
+    "adapter_mb": 0.8563165664672852,
+    "metrics": {
+      "precision": 0.6024030054634769,
+      "recall": 0.5011671335200747,
+      "map50": 0.5534627718757323,
+      "map50_95": 0.45132821353152,
+      "per_class_map50_95": {
+        "crack": 0.4167577956616325,
+        "water": 0.4255507860388204,
+        "leak": 0.5116760588941067
+      },
+      "inference_ms": 5.111111155469935
+    },
+    "training": {
+      "epochs": 3,
+      "best_epoch": 3,
+      "training_seconds": 280.412,
+      "best_val_map50_95": 0.31384
+    }
+  },
+  "delta_lora_minus_full": {
+    "precision": -0.32125883061844995,
+    "recall": -0.33981422712229303,
+    "map50": -0.3670778768987192,
+    "map50_95": -0.40341988799775297,
+    "inference_ms": -1.4459908366169918
+  }
+}

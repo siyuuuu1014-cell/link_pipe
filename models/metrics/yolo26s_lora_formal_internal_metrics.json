@@ -1,0 +1,11 @@
+{
+  "source": "yolo26s_lora_formal",
+  "smoke_only": false,
+  "model_path": "D:\\dev\\projects\\yolo_train\\models\\trained\\yolo26_lora\\formal\\yolo26s_lora_formal\\weights\\best.pt",
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\processed\\data.yaml",
+  "split": "test",
+  "precision": 0.9231955153403573,
+  "recall": 0.8352655028656418,
+  "map50": 0.9183322761664,
+  "map50_95": 0.8532788829914657
+}

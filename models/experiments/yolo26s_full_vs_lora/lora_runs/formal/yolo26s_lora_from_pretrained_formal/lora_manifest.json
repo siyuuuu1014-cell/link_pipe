@@ -1,0 +1,47 @@
+{
+  "format": "yolo26-conv-lora-v1",
+  "smoke_only": false,
+  "base_model": "D:\\dev\\projects\\yolo_train\\yolo26s.pt",
+  "base_sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+  "merged_best": "D:\\dev\\projects\\yolo_train\\models\\experiments\\yolo26s_full_vs_lora\\lora_runs\\formal\\yolo26s_lora_from_pretrained_formal\\weights\\best.pt",
+  "lora_best": "D:\\dev\\projects\\yolo_train\\models\\experiments\\yolo26s_full_vs_lora\\lora_runs\\formal\\yolo26s_lora_from_pretrained_formal\\weights\\lora_best.pt",
+  "adapter": "D:\\dev\\projects\\yolo_train\\models\\experiments\\yolo26s_full_vs_lora\\lora_runs\\formal\\yolo26s_lora_from_pretrained_formal\\adapters\\adapter.pt",
+  "config": {
+    "rank": 8,
+    "alpha": 8.0,
+    "dropout": 0.05,
+    "min_layer": 10,
+    "max_layer": 22,
+    "min_channels": 32,
+    "exclude_attention": true
+  },
+  "train_head": true,
+  "trainable_parameters": {
+    "total": 10168298,
+    "trainable": 1152298,
+    "adapter": 218112,
+    "head": 934186
+  },
+  "lr0": 0.001,
+  "adapter_lr_mult": 0.5,
+  "target_count": 39,
+  "merge_max_abs_error": 0.000152587890625,
+  "fixed_test": {
+    "precision": 0.9314197859922575,
+    "recall": 0.7593488071958902,
+    "map50": 0.8868388989410079,
+    "map50_95": 0.7861842468666858,
+    "per_class_map50_95": {
+      "crack": 0.7749916242409837,
+      "water": 0.7653709486992535,
+      "leak": 0.8181901676598201
+    },
+    "speed_ms": {
+      "preprocess": 0.2783920323249858,
+      "inference": 7.230496016865322,
+      "loss": 0.0011828675610106067,
+      "postprocess": 0.15668525936571784
+    }
+  },
+  "ultralytics": "8.4.55"
+}

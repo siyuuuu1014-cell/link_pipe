@@ -1,0 +1,50 @@
+{
+  "dataset": "D:\\dev\\projects\\yolo_train\\data\\pipeline_leakage1",
+  "class_names": {
+    "0": "crack",
+    "1": "leak",
+    "2": "no leak",
+    "3": "water"
+  },
+  "splits": {
+    "train": {
+      "present": true,
+      "images": 2816,
+      "class_objects": {
+        "leak": 1154,
+        "water": 847,
+        "crack": 170,
+        "no leak": 650
+      },
+      "empty_labels": 89,
+      "missing_labels": 0,
+      "invalid_rows": 0
+    },
+    "valid": {
+      "present": true,
+      "images": 502,
+      "class_objects": {
+        "leak": 199,
+        "water": 169,
+        "crack": 36,
+        "no leak": 92
+      },
+      "empty_labels": 16,
+      "missing_labels": 0,
+      "invalid_rows": 0
+    },
+    "test": {
+      "present": false,
+      "images": 0
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "Polygon rows will be converted to axis-aligned bounding boxes.",
+    "No source test split; valid will be stratified into valid/test."
+  ],
+  "annotation_formats": {
+    "polygon": 3298,
+    "bbox": 19
+  }
+}

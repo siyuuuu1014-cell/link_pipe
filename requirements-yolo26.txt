@@ -1,0 +1,3 @@
+# Install only inside .venv-yolo26. Do not install into the YOLO-Master Conda environment.
+ultralytics==8.4.55
+ipykernel>=7.3.0

@@ -1,0 +1,55 @@
+{
+  "source": "D:\\dev\\projects\\yolo_train\\data\\pipeline_leakage1",
+  "output": "D:\\dev\\projects\\yolo_train\\data\\processed",
+  "seed": 42,
+  "source_names": {
+    "0": "crack",
+    "1": "leak",
+    "2": "no leak",
+    "3": "water"
+  },
+  "class_mapping": {
+    "0": 0,
+    "1": 2,
+    "2": null,
+    "3": 1
+  },
+  "target_names": [
+    "crack",
+    "water",
+    "leak"
+  ],
+  "splits": {
+    "train": {
+      "images": 2816,
+      "objects": {
+        "crack": 170,
+        "water": 847,
+        "leak": 1154
+      },
+      "negative_images": 708
+    },
+    "valid": {
+      "images": 251,
+      "objects": {
+        "crack": 18,
+        "water": 85,
+        "leak": 97
+      },
+      "negative_images": 53
+    },
+    "test": {
+      "images": 251,
+      "objects": {
+        "crack": 18,
+        "water": 84,
+        "leak": 102
+      },
+      "negative_images": 53
+    }
+  },
+  "finding_counts": {
+    "no_leak_removed": 742
+  },
+  "suspicious_samples_csv": "D:\\dev\\projects\\yolo_train\\models\\metrics\\suspicious_samples.csv"
+}
